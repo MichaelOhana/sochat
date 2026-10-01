@@ -3,6 +3,7 @@ import threading
 rendezvous_server =  ("165.245.214.71", 3000)
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+client_socket.bind("0.0.0.0", 2000)
 
 def menu():
     print("---MENU--- \n Send = s \n Register = r \n Wait = w")
